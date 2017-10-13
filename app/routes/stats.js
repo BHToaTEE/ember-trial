@@ -1,3 +1,5 @@
+//Ember-light-table code. leave be for now. 
+
 import Ember from 'ember';
 import { A } from '@ember/array';
 import Route from '@ember/routing/route';

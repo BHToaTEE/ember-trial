@@ -1,3 +1,5 @@
+//This is the stats model, going to work on a form to push data to this if I run out of other things to do" 
+
 import DS from 'ember-data';
 
 import Model from 'ember-data/model';

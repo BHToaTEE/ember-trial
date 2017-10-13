@@ -1,3 +1,5 @@
+//I pulled this from the e-light-table ex. NOTE: YOU MUST CHANGE MODEL TO AN ARRAY FOR IT TO FUNCTION PROPERLY. Right now its set to display 10 rows per page and should be continously scrolling as the user scrolls down, more rows should appear. 
+
 import Mixin from '@ember/object/mixin';
 import { computed } from '@ember/object';
 import { isEmpty } from '@ember/utils';
