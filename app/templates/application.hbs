@@ -1,8 +1,18 @@
- <nav class="navClass centerText">
-        
-        
-        <a href="/stats" class="btn btn-primary">BHToaT Stats</a>
-   
-      </nav>
+<!--
+  {{input type="text" value=email placeholder="email"}}
+    {{input type="text" value=password placeholder="password"}}
+-->
+ 
 
-{{outlet}}
+ {{#if session.isAuthenticated}}
+  Logged in as {{session.currentUser.displayName}}
+  <button {{action "signOut"}}>Sign out</button>
+  {{outlet}}
+{{else}}
+  {{input type="text" value=email placeholder="email"}}
+{{input type="text" value=password placeholder="password" type='password'}}
+<button class="auth-as-password" {{action "signIn" "password" email password}}>Sign in with Email</button>
+{{/if}}
+
+
+
