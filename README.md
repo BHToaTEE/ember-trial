@@ -1,3 +1,12 @@
+Things to do: Add more forms/push to firebase (let me know if you need specifics), create navbar with links, add dummy data to table
+
+things done: login/auth, firebase connection, blog form(primitive), created stats table. 
+
+
+
+
+
+
 # ember-trial
 
 This README outlines the details of collaborating on this Ember application.
