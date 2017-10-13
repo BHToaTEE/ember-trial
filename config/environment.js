@@ -14,6 +14,9 @@ module.exports = function(environment) {
     databaseURL: "https://ember-trial-762aa.firebaseio.com",
     storageBucket: "ember-trial-762aa.appspot.com",
   },
+	    torii: {
+      sessionServiceName: 'session'
+    },
     EmberENV: {
 	
       FEATURES: {
