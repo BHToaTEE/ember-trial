@@ -12,3 +12,11 @@ body {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+
+#teamStats { width: 125px;
+	margin: 7px;
+}
+
+input {
+	font-weight:bold;
+}

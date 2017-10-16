@@ -1,4 +1,45 @@
-{{stats/teamstats-form}}
+<h2>Welcome to the TBHTOAT Add Stats Section:</h2>
+<p></p>
+<div class="row">
+	<div class="col-sm-4">
+
+	
+{{#bs-form id="teamStats" onSubmit=(action "addTeam") as |teamstat| }}
+    <label class="control-label">Home Score:</label>
+    <input value={{homeScore}} class="form-control" oninput={{action (mut homeScore) value="target.value"}} type="number">
+    <label class="control-label">Away Score:</label>
+    <input value={{awayScore}} class="form-control" oninput={{action (mut awayScore) value="target.value"}} type="number">
+    
+    <label class="control-label">Home Shots Taken:</label>
+    <input value={{homeTotalShots}} class="form-control" oninput={{action (mut homeTotalShots) value="target.value"}} type="number">
+    <label class="control-label">Away Shots Taken:</label>
+    <input value={{awayTotalShots}} class="form-control" oninput={{action (mut awayTotalShots) value="target.value"}} type="number">
+    <label class="control-label">Home Saves:</label>
+    <input value={{totalHomeSaves}} class="form-control" oninput={{action (mut totalHomeSaves) value="target.value"}} type="number">
+    <label class="control-label">Away Saves:</label>
+    <input value={{totalAwaySaves}} class="form-control" oninput={{action (mut totalAwaySaves) value="target.value"}} type="number">
+    <label class="control-label">Home Shot %:</label>
+    <input value={{shotHomePercentage}} class="form-control" oninput={{action (mut shotHomePercentage) value="target.value"}} type="number">
+    <label class="control-label">Away Shot %:</label>
+    <input value={{shotAwayPercentage}} class="form-control" oninput={{action (mut shotAwayPercentage) value="target.value"}} type="number">
+    <label class="control-label">Home Save %:</label>
+    <input value={{saveHomePercentage}} class="form-control" oninput={{action (mut saveHomePercentage) value="target.value"}} type="number">
+    <label class="control-label">Away Save %:</label>
+    <input value={{saveAwayPercentage}} class="form-control" oninput={{action (mut saveAwayPercentage) value="target.value"}} type="number">
+    <label class="control-label">Penalty Mins (Home):</label>
+    <input value={{penaltyHomeMins}} class="form-control" oninput={{action (mut penaltyHomeMins) value="target.value"}} type="number">
+    <label class="control-label">Penalty Mins (Away):</label>
+    <input value={{penaltyAwayMins}} class="form-control" oninput={{action (mut penaltyAwayMins) value="target.value"}} type="number">
+    
+    
+ 	{{#link-to 'playstatsform'}}<button {{action "addTeam"}} class="btn btn-default">Continue</button>{{/link-to}}
+{{/bs-form}}
+</div>
+</div>
+
+
+
+{{yield}}
 
 
 {{outlet}}
