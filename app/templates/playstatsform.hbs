@@ -1,0 +1,26 @@
+<h2>Welcome to the TBHTOAT Add Stats Section:</h2>
+<p></p>
+<div class="row">
+	<div class="col-sm-4">
+
+	
+      {{#bs-form id="playerStats" onSubmit=(action "addPlayer") as |playstat| }}
+		   <label class="control-label">Player Name:</label>
+			<input value={{playerName}} class="form-control" oninput={{action (mut playerName) value="target.value"}} type="text">
+			<label class="control-label">Goals:</label>
+			<input value={{goalsScored}} class="form-control" oninput={{action (mut goalsScored) value="target.value"}} type="number">
+			<label class="control-label">Assists:</label>
+			<input value={{assists}} class="form-control" oninput={{action (mut assists) value="target.value"}} type="number">
+
+			<label class="control-label">Shots Taken:</label>
+			<input value={{shotsTaken}} class="form-control" oninput={{action (mut shotsTaken) value="target.value"}} type="number">
+			<label class="control-label">Shooting Percentage:</label>
+			<input value={{shootingPercentage}} class="form-control" oninput={{action (mut shootingPercentage) value="target.value"}} type="number">
+			<label class="control-label">Penalty Mins:</label>
+			<input value={{penaltyMins}} class="form-control" oninput={{action (mut penaltyMins) value="target.value"}} type="number">
+			<label class="control-label">Total Pts:</label>
+			<input value={{totalGamePts}} class="form-control" oninput={{action (mut totalGamePts) value="target.value"}} type="number">
+     	{{#link-to 'verifyPlayer'}}<button {{action "addPlayer"}} class="btn btn-default">Continue</button>{{/link-to}}
+{{/bs-form}}
+</div>
+</div>{{outlet}}

@@ -11,6 +11,9 @@ Router.map(function() {
   this.route('posts');
   this.route('addgame');
   this.route('teamstatsform');
+  this.route('playstatsform');
+  this.route('playerstatsform');
+  this.route('verifyPlayer');
 });
 
 export default Router;
