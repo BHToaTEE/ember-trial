@@ -9,6 +9,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('stats');
   this.route('posts');
+  this.route('addgame');
+  this.route('teamstatsform');
 });
 
 export default Router;

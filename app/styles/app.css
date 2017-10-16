@@ -1,0 +1,14 @@
+body {
+/*	background-color: blue;*/
+}
+
+#addGame {
+	color: blue;
+	margin-top: 5px;
+
+}
+
+.form-control {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}

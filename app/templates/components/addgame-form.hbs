@@ -1,0 +1,25 @@
+<h2>Welcome to the TBHTOAT Blog</h2>
+<ul class="addGame">
+  <li>
+    {{input value=user placeholder="User"}}
+  </li>
+    <li>
+    {{input value=homeTeam placeholder="Home Team"}}
+  </li>
+  <li>
+    {{textarea value=awayTeam placeholder="Away Team"}}
+  </li>
+     <li>
+    {{input value=homeScore placeholder="Home Score"}}
+  </li>
+  <li>
+    {{textarea value=awayScore placeholder="Away Score"}}
+  </li>
+  <li>
+    <button {{action "addGame"}}>Publish</button>
+  </li>
+</ul>
+
+
+
+{{yield}}

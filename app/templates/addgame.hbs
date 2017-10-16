@@ -1,0 +1,49 @@
+<h2>Welcome to the TBHTOAT Add Stats Section:</h2>
+<p>Check the box if your team won!! (otherwise leave blank/unchecked)</p>
+<div class="row">
+	<div class="col-sm-4">
+
+	
+{{#bs-form id="addGame" onSubmit=(action "addGame") as |addgame| }}
+    <label class="control-label">User:</label>
+    <input value={{user}} class="form-control" oninput={{action (mut user) value="target.value"}} type="text">
+    <label class="control-label">Home Team:</label>
+    <input value={{homeTeam}} class="form-control" oninput={{action (mut homeTeam) value="target.value"}} type="text">
+    <label class="control-label">Away Team:</label>
+    <input value={{awayTeam}} class="form-control" oninput={{action (mut awayTeam) value="target.value"}} type="text">
+    <label class="control-label">Round:</label>
+    <input value={{round}} class="form-control" oninput={{action (mut round) value="target.value"}} type="text">
+    <label class="control-label">Did You Win?:</label>
+    <input checked={{outcome}} class="checkbox" onclick={{action (mut outcome) value="target.checked"}} type="checkbox">
+    <p>(Check the box if your team won!!)</p><br>
+ 	{{#link-to 'teamstatsform'}}<button {{action "addGame"}} class="btn btn-default">Continue</button>{{/link-to}}
+{{/bs-form}}
+</div>
+</div>
+
+<!--
+<ul class="addGame">
+  <li>
+    {{input value=user placeholder="User"}}
+  </li>
+    <li>
+    {{input value=homeTeam placeholder="Home Team"}}
+  </li>
+  <li>
+    {{textarea value=awayTeam placeholder="Away Team"}}
+  </li>
+     <li>
+    {{input value=homeScore placeholder="Home Score"}}
+  </li>
+  <li>
+    {{textarea value=awayScore placeholder="Away Score"}}
+  </li>
+  
+    {{#link-to 'teamstatsform'}}<button {{action "addGame"}}>Publish</button>{{/link-to}}
+  
+</ul>
+	
+-->
+	
+
+{{outlet}}
