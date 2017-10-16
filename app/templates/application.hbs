@@ -1,6 +1,30 @@
 {{! this is the login form. It is calling the "SignIn" action from controllers/sign-up.js
 Upon sign in, the login button reverts to a logout and displays the text for the user's name}}
 
+<nav class="navbar navbar-default">
+ 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Brand</a>
+    </div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav">
+		<li>{{#link-to 'addgame'}}Posts{{/link-to}}</li>
+		<li>{{#link-to 'addgame'}}About{{/link-to}}</li>
+		<li>{{#link-to 'addgame'}}Stats{{/link-to}}</li>
+	</ul>
+</div>
+	
+	
+</nav>
+
 
 <p>Had difficult with sign up form, for now use "bw70316@gmail.com" and "Bluemist1" as password</p>
  
