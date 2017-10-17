@@ -6,7 +6,7 @@ export default DS.Model.extend({
   assists: DS.attr('number'),
   shotsTaken: DS.attr('number'),
   shootingPercentage: DS.attr('number'),
-  penaltyMin: DS.attr('number'),
+  penaltyMins: DS.attr('number'),
   totalGamePts: DS.attr('number'),
   timestamp: DS.attr('number')
 });

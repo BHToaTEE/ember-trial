@@ -11,7 +11,7 @@ export default Ember.Controller.extend({
 		assists: this.get('assists'),
 		shotsTaken: this.get('shotsTaken'),
 		shootingPercentage: this.get('shootingPercentage'),
-		penaltyMin: this.get('penaltyMin'),
+		penaltyMins: this.get('penaltyMins'),
 		totalGamePts: this.get('totalGamePts'),
         timestamp: new Date().getTime()
       });
