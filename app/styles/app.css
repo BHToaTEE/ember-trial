@@ -2,6 +2,20 @@ body {
 /*	background-color: blue;*/
 }
 
+#verifyGame {
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#verifyTeam {
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+}
+
 #addGame {
 	color: blue;
 	margin-top: 5px;
@@ -19,4 +33,17 @@ body {
 
 input {
 	font-weight:bold;
+}
+
+hr {
+	 display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    max-width: 250px;
+    text-align: center;
+    margin-left: 119.5px;
+    border-color: red;
+    padding: 0;
 }

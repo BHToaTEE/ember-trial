@@ -1,1 +1,39 @@
+
+     <h2>Verify Your Team Stats</h2>
+	     
+	     <p>If you found you have made a mistake, click the "Go Back" button. If not, click "Continue" to proceed to the "Player Stats Form". For outcome, true=win and false=loss</p>
+
+<div class="row">
+	<div class="col-sm-4" id="verifyGame">
+   	     <h3 id='review'>Review Add Game Info Below</h3>
+			 {{#each model.addgame as |addgame|}}
+				<div><p>User:  {{addgame.user}}</p></div><hr>
+				<div><p>Home Team:  {{addgame.homeTeam}}</p></div><hr>
+				<div><p>Away Team:  {{addgame.awayTeam}}</p></div><hr>
+				<div><p>Round:  {{addgame.user}}</p></div><hr>
+				<div><p>Outcome:  {{addgame.outcome}}</p></div>
+			{{/each}}
+		<button>press me</button>
+	</div>
+	<div class="col-sm-4" id="verifyTeam">
+		<h3 id='review'>Review Team Stats Info Below</h3>
+			{{#each model.teamstat as |teamstat|}}
+				<div><p>Home Score:  {{teamstat.homeScore}}</p></div><hr>
+				<div><p>Away Score:  {{teamstat.awayScore}}</p></div><hr>
+				<div><p>Tot. Home Shots:  {{teamstat.homeTotalShots}}</p></div><hr>
+				<div><p>Tot. Away Shots: {{teamstat.awayTotalShots}}</p></div><hr>
+				<div><p>Tot. Home Saves:  {{teamstat.totalHomeSaves}}</p></div><hr>
+				<div><p>Tot. Away Saves:  {{teamstat.totalAwaySaves}}</p></div><hr>
+				<div><p>Home Shot %:  {{teamstat.shotHomePercentage}}</p></div><hr>
+				<div><p>Away Shot %:  {{teamstat.shotAwayPercentage}}</p></div><hr>
+				<div><p>Home Save %:  {{teamstat.saveHomePercentage}}</p></div><hr>
+				<div><p>Away Save %:  {{teamstat.saveAwayPercentage}}</p></div><hr>
+				<div><p>Home Pen. Min.:  {{teamstat.homeScore}}</p></div><hr>
+				<div><p>Away Pen. Min.: {{teamstat.penaltyAwayMins}}</p></div>
+			{{/each}}
+	</div>
+</div>
+
+
+
 {{outlet}}
