@@ -1,1 +1,15 @@
+<h2>Verify Your Player Stats Info</h2>
+
+{{#each model as |playstat|}}
+<div><p>Player Name:  {{playstat.playerName}}</p></div>
+<div><p>Goals Scored: {{playstat.goalsScored}}</p></div>
+<div><p>Assists: {{playstat.assists}}</p></div>
+<div><p>Player Name: {{playstat.shotsTaken}}</p></div>
+<div><p>Shooting Percentage: {{playstat.shootingPercentage}}</p></div>
+<!--<div>{{playstat.penaltyMins}}</div>-->
+<div><p>Total Game Pts:  {{playstat.totalGamePts}}</p></div>
+
+{{/each}}
+
+
 {{outlet}}

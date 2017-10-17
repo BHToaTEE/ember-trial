@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('playstatsform');
   this.route('playerstatsform');
   this.route('verifyPlayer');
+  this.route('verifyteam');
 });
 
 export default Router;
