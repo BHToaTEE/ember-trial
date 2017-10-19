@@ -3,8 +3,8 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  sortProperties: ['published'],
-  sortAscending: false, // sorts post by timestamp
+postsSorting: ['publishedDate'],
+sortedPosts: Ember.computed.sort('post', 'postsSorting'), // sorts post by timestamp
   actions: {
     publishPost: function() {
       var newPost = this.store.createRecord('post', {
