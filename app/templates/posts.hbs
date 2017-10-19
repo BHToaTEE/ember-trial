@@ -1,18 +1,21 @@
 
-<h2>Welcome to the TBHTOAT Blog</h2>
-<ul class="post-publish">
-  <div>
-    {{input value=title placeholder="Title"}}
-</div>
-   <div>
-    {{input value=author placeholder="Author"}}
- </div>
-  <div>
-    {{textarea value=body placeholder="Body"}}
-  </div>
- 
-    <button {{action "publishPost"}}>Publish</button>
+<h2>Welcome to the TBHTOAT Blog Section:</h2>
+<p></p>
+<div class="row">
+	<div class="col-sm-4">
 
-</ul>
+	
+      {{#bs-form id="playerStats" onSubmit=(action "publishPost") as |playstat| }}
+		   <label class="control-label">Title:</label>
+			<input value={{title}} class="form-control" oninput={{action (mut title) value="target.value"}} type="text">
+			<label class="control-label">Author:</label>
+			<input value={{author}} class="form-control" oninput={{action (mut author) value="target.value"}} type="text">			
+			<label class="control-label">Post:</label>
+			<textarea value={{post}} class="form-control" oninput={{action (mut post) value="target.value"}} type="text"></textarea>
+
+		{{#link-to 'blog'}}<button {{action "publishPost"}} class="btn btn-default">Publish</button>{{/link-to}}
+{{/bs-form}}
+</div>
+</div>{{outlet}}
 
 

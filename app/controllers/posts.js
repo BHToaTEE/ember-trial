@@ -3,7 +3,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  sortProperties: ['timestamp'],
+  sortProperties: ['published'],
   sortAscending: false, // sorts post by timestamp
   actions: {
     publishPost: function() {

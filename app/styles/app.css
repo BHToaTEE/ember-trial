@@ -47,3 +47,17 @@ hr {
     border-color: red;
     padding: 0;
 }
+
+
+/*blog post related*/
+
+#blogPost {
+	border-style:groove;
+	border-radius: 3px;
+	border-color: blue;
+	margin-bottom: 20px;
+	overflow-wrap: break-word;
+}
+
+
+#
