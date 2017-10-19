@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="col-sm-2">
+		<p></p> 
+	</div>
+	
+ 
+
+
+ 	<div class="col-sm-8">
+		<h2>Below are Your Recent Blog Posts</h2>
+	{{#each model as |post|}}
+	    <div id=blogPost>
+        <div id='published'><p>Published:  {{post.publishedDate}}</p></div>
+        <div id='title'><p>Title:  {{post.title}}</p></div>
+		<div id='author'><p>Author:  {{post.author}}</p></div>
+		<div id='body'><p>Post:  {{post.post}}</p></div>
+	</div>
+	{{/each}}
+  </div>
+</div>
+
+
+{{outlet}}
